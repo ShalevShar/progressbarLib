@@ -1,4 +1,6 @@
-<h align="center"> ## CustomProgressbar Library </h>
+<div style="text-align: center;">
+    <h1 style="font-size: 24px;">CustomProgressbar Library</h1>
+</div>
 A circular faded style progress bar for Android, offering customization for color, thickness, and size. The user can start and pause the progress bar, and configure parameters directly in XML.
 
 
