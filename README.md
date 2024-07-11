@@ -71,20 +71,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-**360 angle colorful direction line:**
-```java
-final int SIZE = 30;
-ArrayList<Integer> nums = new ArrayList<>();
-for (int i = 0; i < SIZE; i++) {
-    nums.add((int) (i*(360 / SIZE)));
-}
-
-directionLineLayout1.setStepLines(this, DirectionLineLayout.LayoutOrientation.HORIZONTAL, 2, SIZE, R.color.skv_arrow_color, 80, R.drawable.ic_arrow);
-for (int i = 0; i < directionLineLayout1.getSize(); i++) {
-    directionLineLayout1.setUnitDirection(i, nums.get(i));
-    int color = Color.HSVToColor(255, new float[]{(float) nums.get(i), 1.0f, 1.0f});
-    directionLineLayout1.setUnitColor(i, (int) color);
-}
 ```
 
 
