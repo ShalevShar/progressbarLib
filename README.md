@@ -2,16 +2,15 @@
 A circular faded style progress bar for Android, offering customization for color, thickness, and size. The user can start and pause the progress bar, and configure parameters directly in XML.
 
 
-<b align="center">
-	Sizes : MIN | MED | MAX
-	<b>
- 	<img width="600" alt="progressSizes" src="https://github.com/ShalevShar/progressbarLib/assets/127881894/f957151a-4c5d-4a5d-90c8-4c88d91f7368">
-	</b>
-	Thickness 
-	</b>
-	<img width="600" alt="progressThickness" src="https://github.com/ShalevShar/progressbarLib/assets/127881894/454a19b7-c1ab-4d61-9919-2ab0e42680da">
- 	</b>
-</b>
+<div align="center">
+    <b>Sizes: MIN | MED | MAX</b>
+    <br>
+    <img width="600" alt="progressSizes" src="https://github.com/ShalevShar/progressbarLib/assets/127881894/f957151a-4c5d-4a5d-90c8-4c88d91f7368">
+    <br>
+    <b>Thickness:</b>
+    <br>
+    <img width="600" alt="progressThickness" src="https://github.com/ShalevShar/progressbarLib/assets/127881894/454a19b7-c1ab-4d61-9919-2ab0e42680da">
+</div>
 
 
 
