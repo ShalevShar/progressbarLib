@@ -3,6 +3,7 @@ package com.example.progressbarlib;
 import android.animation.Animator;
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
@@ -21,26 +22,44 @@ public class CustomProgressbar extends AppCompatImageView{
         private final int increment = 45;
         private ValueAnimator animator;
 
-    public enum Size {
-            MIN, MED, MAX
-        }
+        public enum Size {
+                MIN, MED, MAX
+            }
+
         public CustomProgressbar(Context context, AttributeSet attrs) {
             super(context, attrs);
-            init();
+            init(context, attrs);
         }
 
         public CustomProgressbar(Context context, AttributeSet attrs, int defStyleAttr) {
             super(context, attrs, defStyleAttr);
-            init();
+            init(context, attrs);
         }
 
-        private void init() {
-            paint = new Paint();
-            paint.setColor(ContextCompat.getColor(this.getContext(), android.R.color.black));
-            paint.setStyle(Paint.Style.STROKE);
-            paint.setStrokeWidth(15);
-            setupAnimator();
+
+    private void init(Context context, AttributeSet attrs) {
+        paint = new Paint();
+        paint.setStyle(Paint.Style.STROKE);
+
+        TypedArray a = context.getTheme().obtainStyledAttributes(
+                attrs,
+                R.styleable.CustomProgressbar,
+                0, 0);
+
+        try {
+            int color = a.getColor(R.styleable.CustomProgressbar_progressColor, ContextCompat.getColor(context, android.R.color.black));
+            int strokeWidth = a.getDimensionPixelSize(R.styleable.CustomProgressbar_progressStrokeWidth, 15);
+            int size = a.getInt(R.styleable.CustomProgressbar_progressSize, 1);
+
+            paint.setColor(color);
+            paint.setStrokeWidth(strokeWidth);
+            setSize(Size.values()[size]);
+        } finally {
+            a.recycle();
         }
+
+        setupAnimator();
+    }
 
         private void setupAnimator() {
             animator = ValueAnimator.ofFloat(0, 135);
@@ -89,25 +108,31 @@ public class CustomProgressbar extends AppCompatImageView{
             invalidate();
         }
 
-        public void setSize(Size size) {
-            int dimension;
-            switch (size) {
-                case MIN:
-                    dimension = 100;
-                    break;
-                case MAX:
-                    dimension = 300;
-                    break;
-                case MED:
-                default:
-                    dimension = 200;
-            }
-            ViewGroup.LayoutParams params = getLayoutParams();
+    public void setSize(Size size) {
+        int dimension;
+        switch (size) {
+            case MIN:
+                dimension = 100;
+                break;
+            case MAX:
+                dimension = 300;
+                break;
+            case MED:
+            default:
+                dimension = 200;
+        }
+
+        ViewGroup.LayoutParams params = getLayoutParams();
+        if (params == null) {
+            params = new ViewGroup.LayoutParams(dimension, dimension);
+        } else {
             params.width = dimension;
             params.height = dimension;
-            setLayoutParams(params);
-            invalidate();
         }
+        setLayoutParams(params);
+        requestLayout(); // Ensure the view updates its layout with the new params
+        invalidate();
+    }
 
         public void start() {
             if (animator != null && !animator.isRunning()) {
