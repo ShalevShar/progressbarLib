@@ -5,13 +5,18 @@ A circular faded style progress bar for Android, offering customization for colo
 
 
 <div align="center">
-    <b>Sizes: MIN | MED | MAX</b>
+    <b>Select between 3 Sizes: MIN | MED | MAX</b>
     <br>
     <img width="600" alt="progressSizes" src="https://github.com/ShalevShar/progressbarLib/assets/127881894/f957151a-4c5d-4a5d-90c8-4c88d91f7368">
     <br>
-    <b>Thickness:</b>
+    <b>Thickness Control:</b>
     <br>
     <img width="600" alt="progressThickness" src="https://github.com/ShalevShar/progressbarLib/assets/127881894/454a19b7-c1ab-4d61-9919-2ab0e42680da">
+    <br>
+    <b>Define ANY Color:</b>
+    <br>
+    <img width="257" alt="progressColor" src="https://github.com/ShalevShar/progressbarLib/assets/127881894/b0dabb25-8205-4598-bdb8-3020bc75b7b6">
+
 </div>
 
 
