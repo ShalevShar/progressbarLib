@@ -15,7 +15,7 @@ A circular faded style progress bar for Android, offering customization for colo
     <br>
     <b>Define ANY Color:</b>
     <br>
-    <img width="257" alt="progressColor" src="https://github.com/ShalevShar/progressbarLib/assets/127881894/b0dabb25-8205-4598-bdb8-3020bc75b7b6">
+    <img width="400" alt="progressColor" src="https://github.com/ShalevShar/progressbarLib/assets/127881894/b0dabb25-8205-4598-bdb8-3020bc75b7b6">
 
 </div>
 
