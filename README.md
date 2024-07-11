@@ -5,14 +5,18 @@ A circular faded style progress bar for Android, offering customization for colo
 <b align="center">
 	
  <img width="600" alt="progressSizes" src="https://github.com/ShalevShar/progressbarLib/assets/127881894/f957151a-4c5d-4a5d-90c8-4c88d91f7368">
+
+________________________________________________________________________
+
+ Customizable circular progress bar with start and pause functionality.
+
+
+![E7C94F09-9A90-446F-812A-4460C2FAA21A-ezgif com-resize](https://github.com/ShalevShar/progressbarLib/assets/127881894/e5d5f4eb-06a9-4b71-88d8-24fa4a7de984)
+
 </b>
 
 
 
-Customizable circular progress bar with start and pause functionality.
-
-
-![E7C94F09-9A90-446F-812A-4460C2FAA21A-ezgif com-resize](https://github.com/ShalevShar/progressbarLib/assets/127881894/e5d5f4eb-06a9-4b71-88d8-24fa4a7de984)
 
 
 
