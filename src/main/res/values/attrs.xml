@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomProgressbar">
+        <attr name="progressStrokeWidth" format="dimension" />
+        <attr name="progressColor" format="color" />
+        <attr name="progressSize" format="enum">
+            <enum name="min" value="0" />
+            <enum name="med" value="1" />
+            <enum name="max" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>
