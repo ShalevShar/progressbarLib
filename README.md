@@ -45,8 +45,8 @@ dependencies {
 }
 ```
 
-## Usage
--*XML Layout Example:
+# Usage
+### XML Layout Example:
 ```java
  <com.example.progressbarlib.CustomProgressbar
         android:id="@+id/main_progressBar"
