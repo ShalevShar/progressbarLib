@@ -96,14 +96,14 @@ public class MainActivity extends AppCompatActivity {
 
 ## Credits
 ### Authors and Contributors
-Shalev Shar - Developer and maintainer of the CustomProgressbar Library.
+	Shalev Shar - Developer and maintainer of the CustomProgressbar Library.
 ### Open Source Libraries Used
-Android SDK - Core libraries provided by Google for Android development.
-AppCompat Library - Part of Android Jetpack, providing backward-compatible versions of Android components.
+	Android SDK - Core libraries provided by Google for Android development.
+	AppCompat Library - Part of Android Jetpack, providing backward-compatible versions of Android components.
 -----
 
 ## License
-
+	
 -----
 
 Enjoy using CustomProgressbar for your Android projects!
