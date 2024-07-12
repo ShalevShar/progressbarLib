@@ -32,7 +32,7 @@ ________________________________________________________________________
 
  ### Customizable circular progress bar with start and pause functionality.
 
-<b align="center"> ![E7C94F09-9A90-446F-812A-4460C2FAA21A-ezgif com-resize](https://github.com/ShalevShar/progressbarLib/assets/127881894/e5d5f4eb-06a9-4b71-88d8-24fa4a7de984)
+<br align="center"> ![E7C94F09-9A90-446F-812A-4460C2FAA21A-ezgif com-resize](https://github.com/ShalevShar/progressbarLib/assets/127881894/e5d5f4eb-06a9-4b71-88d8-24fa4a7de984)
 </br>
 
 
